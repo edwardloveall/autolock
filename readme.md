@@ -13,3 +13,7 @@ In practice, this means your computer will require a password when you're out an
 * In `com.edwardloveall.autolock.plist`, replace the `path/to/autolock.sh` with the path to the script in the previous step.
 * Move the launchd plist to `~/Library/LaunchAgents`. If you don't have the `LaunchAgents` folder, you can just create it. Spelling and capitalization are important.
 * Install and start the launchd job with `launchctl load -w ~/Library/LaunchAgents/com.edwardloveall.autolock.plist`
+
+---
+
+Read more about this in my blog post: http://blog.edwardloveall.com/post/120467537407/automatically-lock-your-computer-based-on-wi-fi
