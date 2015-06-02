@@ -1,5 +1,5 @@
 SSID='Death Star'
-HOME=`ioreg -rn en0 | grep "$SSID"`
+HOME=`ioreg -rn en0 | fgrep -e "$SSID"`
 
 if [ "$HOME" ]; then
   SECURE='false'
