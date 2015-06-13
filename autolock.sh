@@ -1,10 +1,10 @@
-SSID='Death Star'
-HOME=`ioreg -rn en0 | fgrep -e "$SSID"`
+HOME_SSID='Death Star'
+CURRENT_SSID=`ioreg -rn en0 | fgrep -e "$HOME_SSID"`
 
-if [ "$HOME" ]; then
-  SECURE='false'
+if [ "$CURRENT_SSID" ]; then
+  PASS_ON_WAKE='false'
 else
-  SECURE='true'
+  PASS_ON_WAKE='true'
 fi
 
-osascript -e 'tell application "System Events"' -e 'tell security preferences' -e "set require password to wake to $SECURE" -e 'end tell' -e 'end tell'
+osascript -e 'tell application "System Events"' -e 'tell security preferences' -e "set require password to wake to $PASS_ON_WAKE" -e 'end tell' -e 'end tell'
