@@ -16,4 +16,4 @@ In practice, this means your computer will require a password when you're out an
 
 ---
 
-Read more about this in my blog post: http://blog.edwardloveall.com/post/120467537407/automatically-lock-your-computer-based-on-wi-fi
+Read more about this in my blog post: https://blog.edwardloveall.com/automatically-lock-your-computer-based-on-wi-fi
